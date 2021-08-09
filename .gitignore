@@ -1,0 +1,4 @@
+# enviroment files
+env/
+# python files
+__pycache__/
