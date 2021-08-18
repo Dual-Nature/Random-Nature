@@ -13,17 +13,3 @@ class model(nn.Module):
         x = F.relu(self.sl1(x))
         return F.relu(self.sl2(x))
 
-
-
-from mpl_toolkits import mplot3d
-import csv
-import numpy as np
-import matplotlib.pyplot as plt
-
-with open('./word_list.csv', newline='') as csvfile:
-    spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
-    for row in spamreader:
-        print(', '.join(row).split(','))
-
-fig = plt.figure()
-ax = plt.axes(projection='3d')
